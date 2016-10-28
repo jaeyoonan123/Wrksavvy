@@ -7,7 +7,7 @@
 
 	<name>Wrksavvy</name>
 
-	<description>The acceptance environment build of Wrksavvy.</description>
+	<description>The production environment build of Wrksavvy.</description>
 
 	<!--
 	Current latest and default version
