@@ -32,7 +32,7 @@
 	<preference name="iosPersistentFileLocation" value="Library" />
 
 	<!--
-	Disable backup to iCloud on iOS.
+	Disable backup to iCloud on iOS. 
 	-->
 	<preference name="BackupWebStorage" value="none" />
 
