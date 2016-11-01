@@ -91,7 +91,7 @@
 
 	<gap:platform name="ios" />
 
-	<!--
+	<!-- 
 	<gap:splash src="res/ios/Default@2x.png" gap:platform="ios" width="640" height="960" />
 	<gap:splash src="res/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
 	<gap:splash src="res/ios/Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1536" />
