@@ -2,7 +2,7 @@
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android="http://schemas.android.com/apk/res/android"
-		id        = "com.mendixcloud.adpinnovation2"
+		id        = "com.mendixcloud.adpinnovation1"
 		version   = "1.0.2" >
 
 	<name>Wrksavvy</name>
@@ -32,7 +32,7 @@
 	<preference name="iosPersistentFileLocation" value="Library" />
 
 	<!--
-	Disable backup to iCloud on iOS. 
+	Disable backup to iCloud on iOS.
 	-->
 	<preference name="BackupWebStorage" value="none" />
 
@@ -91,7 +91,7 @@
 
 	<gap:platform name="ios" />
 
-	<!-- 
+	<!--
 	<gap:splash src="res/ios/Default@2x.png" gap:platform="ios" width="640" height="960" />
 	<gap:splash src="res/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
 	<gap:splash src="res/ios/Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1536" />
