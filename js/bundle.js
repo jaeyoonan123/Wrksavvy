@@ -149,7 +149,7 @@
 	            cacheBust: config.cachebust,
 	            offline: enableOffline,
 	            server: {
-	                timeout: 3000
+	                timeout: 30000
 	            },
 	            data: {
 	                offlineBackend: {
