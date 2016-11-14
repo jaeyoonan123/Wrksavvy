@@ -74,6 +74,22 @@
 			        systemOpen($(this).attr('href'));
 			    });
 			}
+      document.addEventListener("pause", onPause, false);
+        function onPause() {
+            pausedate = new Date();
+        }
+      document.addEventListener("resume", onResume, false);
+        function onResume() {
+            newhour = 10000;
+            diffhour = (new Date) - pausedate;
+            if (diffhour > newhour)
+            {
+                mx.logout();
+
+                alert("For your security, you've been automatically logged out due to inactivity");
+
+            }
+        }
 
 			window.startApp = function() {
 				document.addEventListener("deviceready", function() {
@@ -86,21 +102,7 @@
 					mxapp.initialize("https://wrksavvy-accp.mendixcloud.com", enableOffline);
 
 
-        document.addEventListener("pause", onPause, false);
-          function onPause() {
-              pausedate = new Date();
-          }
 
-        document.addEventListener("resume", onResume, false);
-          function onResume() {
-              newhour = 2700000;
-              diffhour = (new Date) - pausedate;
-              if (diffhour > newhour)
-              {
-                  mx.logout();
-                  alert("For your security, you've been automatically logged out due to inactivity");
-              }
-          }
 
 				});
 			}
