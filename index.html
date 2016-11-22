@@ -74,22 +74,7 @@
 			        systemOpen($(this).attr('href'));
 			    });
 			}
-      document.addEventListener("pause", onPause, false);
-        function onPause() {
-            pausedate = new Date();
-        }
-      document.addEventListener("resume", onResume, false);
-        function onResume() {
-            var newhour = 2700000;
-            var diffhour = (new Date) - pausedate;
-            if (diffhour > newhour)
-            {
-                mx.logout();
 
-                alert("For your security, you've been automatically logged out due to inactivity");
-
-            }
-        }
 
 			window.startApp = function() {
 				document.addEventListener("deviceready", function() {
@@ -111,7 +96,7 @@
             }
           document.addEventListener("resume", onResume, false);
             function onResume() {
-                var newhour = 100000;
+                var newhour = 2700000;
                 diffhour = (new Date) - pausedate;
                 if (diffhour > newhour)
                 {
