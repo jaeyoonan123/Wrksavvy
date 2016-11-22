@@ -80,8 +80,8 @@
         }
       document.addEventListener("resume", onResume, false);
         function onResume() {
-            newhour = 2700000;
-            diffhour = (new Date) - pausedate;
+            var newhour = 2700000;
+            var diffhour = (new Date) - pausedate;
             if (diffhour > newhour)
             {
                 mx.logout();
@@ -97,11 +97,31 @@
 					//if (navigator && navigator.splashscreen) {
 					//	navigator.splashscreen.show();
 					//}
+
+
+
+
 					window.openAllLinksWithBlankTargetInSystemBrowser();
 					// Make sure to include the scheme (e.g. http://) in the URL.
 					mxapp.initialize("https://wrksavvy-accp.mendixcloud.com", enableOffline);
 
+          document.addEventListener("pause", onPause, false);
+            function onPause() {
+                pausedate = new Date();
+            }
+          document.addEventListener("resume", onResume, false);
+            function onResume() {
+                var newhour = 100000;
+                diffhour = (new Date) - pausedate;
+                if (diffhour > newhour)
+                {
+                    setTimeout(function(){
+                      mx.logout();
+                      window.localStorage.setItem("IDLETIME",diffhour);
+                  },0);
 
+                }
+            }
 
 
 				});
