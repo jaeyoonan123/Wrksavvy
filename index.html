@@ -94,14 +94,14 @@
             function onPause() {
                 pausedate = new Date();
             }
-            
+
           document.addEventListener("resume", onResume, false);
             function onResume() {
                 var newhour = 600000;
                 diffhour = (new Date) - pausedate;
                 if (diffhour > newhour)
                 {
-                    setTimeout(function(){
+                    window.setTimeout(function(){
                       mx.logout();
                       alert("For your security, you've been automatically logged out due to inactivity");
                   },0);
