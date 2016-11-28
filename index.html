@@ -97,13 +97,13 @@
 
           document.addEventListener("resume", onResume, false);
             function onResume() {
-                var newhour = 600000;
+                var newhour = 2700000;
                 diffhour = (new Date) - pausedate;
                 if (diffhour > newhour)
                 {
                     window.setTimeout(function(){
-                      mx.logout();
                       alert("For your security, you've been automatically logged out due to inactivity");
+                      mx.logout();
                   },0);
 
                 }
