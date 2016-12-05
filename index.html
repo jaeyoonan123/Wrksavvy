@@ -102,8 +102,8 @@
                 if (diffhour > newhour)
                 {
                     window.setTimeout(function(){
-                      alert("For your security, you've been automatically logged out due to inactivity");
                       mx.logout();
+                      navigator.notification.alert("For your security, you've been automatically logged out due to inactivity",function(){},"Alert","Close");
                   },0);
 
                 }
