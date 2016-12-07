@@ -87,6 +87,25 @@
 				});
 			}
 
+      document.addEventListener("pause", onPause, false);
+        function onPause() {
+            pausedate = new Date();
+        }
+
+      document.addEventListener("resume", onResume, false);
+        function onResume() {
+            var newhour = 2700000;
+            diffhour = (new Date) - pausedate;
+            if (diffhour > newhour)
+            {
+                window.setTimeout(function(){
+                  mx.logout();
+                  navigator.notification.alert("For your security, you've been automatically logged out due to inactivity",function(){},"Alert","Close");
+              },0);
+
+            }
+        }
+
 			if (window.localStorage && window.localStorage.loginToken) {
 				var params = "loginToken=" + window.localStorage.loginToken;
 				var xhr = new XMLHttpRequest();
