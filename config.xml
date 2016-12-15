@@ -59,8 +59,6 @@
 	<!-- Issue 204079: Allow retrieval of any resource. Custom widgets can point to anything. -->
 	<access origin="*" />
 
-
-
 	<gap:plugin name="cordova-plugin-battery-status" source="npm" version="1.1.2" />
 	<gap:plugin name="cordova-plugin-camera" source="npm" version="2.2.0" />
 	<gap:plugin name="cordova-plugin-console" source="npm" version="1.0.3" />
@@ -82,8 +80,7 @@
 	<!--<gap:plugin name="cordova-plugin-zip" source="npm" version="3.1.0" />-->
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.2.2" />
 	<!--<gap:plugin name="phonegap-plugin-barcodescanner" source="npm" version="3.0.0" />-->
-	<gap:plugin name="cordova-plugin-settings-hook" source="npm" version="0.2.4" />
-  <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.2.2" />
+
 	<gap:plugin name="com.telerik.plugins.nativepagetransitions" source="npm" />
 	<gap:plugin name="cordova-plugin-spinnerdialog" source="npm" />
 	<gap:plugin name="cordova-plugin-touch-id" source="npm"/>
@@ -122,10 +119,6 @@
 	<!-- iPhone 6 -->
 	<gap:splash src="res/ios/Default-667h@2x.png" platform="ios" width="750" height="1334" />
 	<gap:splash src="res/ios/Default-Portrait-736h@3x.png" platform="ios" width="1242" height="2208" />
-	<gap:config-file parent="NSPhotoLibraryUsageDescription" platform="ios" target="*-Info.plist">
-	    <string>Advertisement would like to store a photo.</string>
-	</gap:config-file>
-
 
 	<gap:platform name="android" />
 
