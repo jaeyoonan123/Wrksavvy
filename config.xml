@@ -88,6 +88,7 @@
 	<gap:plugin name="cordova-plugin-actionsheet" source="npm" />
 	<!--Too hard to paste data <gap:plugin name="cordova-plugin-ios-longpress-fix" source="npm" />-->
 	<gap:plugin name="phonegap-plugin-push" source="npm" version="1.5.3" />
+	<gap:plugin name="cordova-plugin-settings-hook" source="npm" version="0.2.4" />
 
 	<gap:platform name="ios" />
 
@@ -119,6 +120,12 @@
 	<!-- iPhone 6 -->
 	<gap:splash src="res/ios/Default-667h@2x.png" platform="ios" width="750" height="1334" />
 	<gap:splash src="res/ios/Default-Portrait-736h@3x.png" platform="ios" width="1242" height="2208" />
+
+	<gap:config-file parent="NSPhotoLibraryUsageDescription" platform="ios" target="*-Info.plist">
+	    <string>Advertisement would like to store a photo.</string>
+	</gap:config-file>
+
+
 
 	<gap:platform name="android" />
 
