@@ -3,7 +3,7 @@
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		id        = "com.mendixcloud.adpinnovation2"
-		version   = "1.0.4" >
+		version   = "1.0.6" >
 
 	<name>Wrksavvy</name>
 
@@ -123,9 +123,13 @@
 	<gap:splash src="res/ios/Default-Portrait-736h@3x.png" platform="ios" width="1242" height="2208" />
 
 
-	<gap:config-file parent="NSPhotoLibraryUsageDescription" platform="ios" target="*-Info.plist">
-	    <string>Advertisement would like to store a photo.</string>
+	<gap:config-file parent="NSPhotoLibraryUsageDescription" gap:platform="ios" target="*-Info.plist">
+	    <string>Application would like to store a photo.</string>
 	</gap:config-file>
+	<gap:config-file parent="NSCameraUsageDescription" gap:platform="ios" target="*-Info.plist">
+	    <string>Application would like to take a photo.</string>
+	</gap:config-file>
+
 
 	<gap:platform name="android" />
 
