@@ -17,10 +17,7 @@
 	defaults.
 	-->
 	<preference name="phonegap-version" value="cli-5.2.0" />
-	<feature name="CDVWKWebViewEngine">
-		<param name="ios-package" value="CDVWKWebViewEngine" />
-	</feature>
-	<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+
 	<!--
 	On iOS, the statusbar is transparent by default and is drawn over the top
 	of our app.
@@ -95,7 +92,7 @@
 	<gap:plugin name="cordova-plugin-actionsheet" source="npm" />
 	<!--Too hard to paste data <gap:plugin name="cordova-plugin-ios-longpress-fix" source="npm" />-->
 	<gap:plugin name="phonegap-plugin-push" source="npm" version="1.5.3" />
-	<gap:plugin name="cordova-plugin-wkwebview-engine-nextgen" source="npm" version="1.0.1" />
+
 
 	<gap:platform name="ios" />
 
