@@ -54,6 +54,7 @@
 
 	<!-- Stop the app from overscrolling and looking all bouncy -->
 	<preference name="DisallowOverscroll" value="true" />
+	<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
 	<feature name="CDVWKWebViewEngine">      <param name="ios-package" value="CDVWKWebViewEngine" /> </feature>
 
 
