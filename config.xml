@@ -54,7 +54,7 @@
 
 	<!-- Stop the app from overscrolling and looking all bouncy -->
 	<preference name="DisallowOverscroll" value="true" />
-
+	<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
 
 
 
@@ -92,7 +92,6 @@
 	<gap:plugin name="cordova-plugin-actionsheet" source="npm" />
 	<!--Too hard to paste data <gap:plugin name="cordova-plugin-ios-longpress-fix" source="npm" />-->
 	<gap:plugin name="phonegap-plugin-push" source="npm" version="1.5.3" />
-
 
 	<gap:platform name="ios" />
 
