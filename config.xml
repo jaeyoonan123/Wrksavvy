@@ -17,7 +17,10 @@
 	defaults.
 	-->
 	<preference name="phonegap-version" value="cli-5.2.0" />
-
+	<feature name="CDVWKWebViewEngine">
+		<param name="ios-package" value="CDVWKWebViewEngine" />
+	</feature>
+	<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
 	<!--
 	On iOS, the statusbar is transparent by default and is drawn over the top
 	of our app.
@@ -54,8 +57,8 @@
 
 	<!-- Stop the app from overscrolling and looking all bouncy -->
 	<preference name="DisallowOverscroll" value="true" />
-	<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-	<feature name="CDVWKWebViewEngine">      <param name="ios-package" value="CDVWKWebViewEngine" /> </feature>
+
+
 
 
 	<!-- allow assets to be loaded and open links in the app itself, see: http://phonegap.com/blog/2012/03/20/access-tags/ -->
