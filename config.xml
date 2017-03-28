@@ -3,7 +3,7 @@
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		id        = "com.mendixcloud.adpinnovation1"
-		version   = "1.0.6" >
+		version   = "1.0.6.1" >
 
 	<name>WrkACCP</name>
 
@@ -22,6 +22,10 @@
 	On iOS, the statusbar is transparent by default and is drawn over the top
 	of our app.
 	-->
+	<feature name="CDVWKWebViewEngine">
+    <param name="ios-package" value="CDVWKWebViewEngine" />
+	</feature>
+	<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
 	<preference name="StatusBarOverlaysWebView" value="false" />
 	<preference name="StatusBarBackgroundColor" value="#5596e6" />
 
@@ -90,6 +94,7 @@
 	<gap:plugin name="cordova-plugin-actionsheet" source="npm" />
 	<!--Too hard to paste data <gap:plugin name="cordova-plugin-ios-longpress-fix" source="npm" />-->
 	<gap:plugin name="phonegap-plugin-push" source="npm" version="1.5.3" />
+	<gap:plugin name="cordova-plugin-wkwebview-engine-nextgen" source="npm" version="1.0.1" />
 
 	<gap:platform name="ios" />
 
